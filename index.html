@@ -1,18 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/main.css">        
-        <title> Шаблон - 1 </title>
-        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.0.0/normalize.css">
+        <meta charset="utf-8">
+        <title>perspective</title>
+        <style>
+            .gallery {
+                text-align: center; /* Выравниваем по центру */
+                perspective: 800px; /* Перспектива */
+                -webkit-perspective: 800px;
+            }
+            .left {
+                transform: rotateY(-30deg); /* Поворачиваем относительно оси Y */
+                transform-origin: right center; /* Точка поворота справа */
+            }
+            .right {
+                transform: rotateY(30deg); /* Поворачиваем относительно оси Y */
+                transform-origin: left center; /* Точка поворота слева */
+            }
+        </style>
     </head>
     <body>
-        <header>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quasi ut obcaecati quis, possimus sit voluptas odio corporis, harum itaque explicabo sunt, accusantium! Non architecto voluptatibus impedit, ipsum, minima provident!
-        </header>
-      <p>Lorem ipsum wefwfdolor sit amet, consectetur adipisicing elit. Quisquam, harum, inventore. Delectus, dolore sit eum quasi voluptatibus temporibus quis expedita in soluta illo odio repellat quos. Praesentium, id aperiam modi.</p>
-       
+        <div class="gallery">
+            <img src="./img/dark_embroidery.png" alt="" class="left">
+            <img src="./img/css-sprite2.png" alt="">
+            <img src="image/aquaria3.jpg" alt="" class="right">
+        </div>
     </body>
 </html>
-
